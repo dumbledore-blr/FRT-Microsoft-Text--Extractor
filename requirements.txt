@@ -1,0 +1,8 @@
+﻿azure-cognitiveservices-vision-computervision==0.9.0
+azure-common==1.1.28
+azure-core==1.29.5
+msrest==0.7.1
+numpy==1.26.2
+python-dotenv==1.0.0
+Requests==2.31.0
+streamlit==1.29.0

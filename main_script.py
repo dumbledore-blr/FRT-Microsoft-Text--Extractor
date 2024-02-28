@@ -62,7 +62,7 @@ st.set_page_config(page_title="Extraction Application")
 
 # Custom CSS style
 cus_css = """
-body{
+body {
 background-color: #323232;
 
 opacity: 0.9;

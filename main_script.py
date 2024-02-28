@@ -76,8 +76,8 @@ load_dotenv()
 # Apply custom CSS
 st.markdown(f"<style>{cus_css}</style>", unsafe_allow_html=True)
 
-trans_api_key = 'ab83879fb5df4a5186dbee340a6acb1b'
-trans_api_region = "eastasia"
+trans_api_key = '46935b2ccfb044e9aeda2e1eeca7ff52'
+trans_api_region = "centralindia"
 
 # Streamlit app title and instructions
 st.title("Extractor Application")    

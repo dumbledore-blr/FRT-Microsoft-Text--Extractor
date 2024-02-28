@@ -15,91 +15,60 @@ st.set_page_config(page_title="Extraction Application")
 # Custom CSS style
 cus_css = """
     body {
-        color: white; /* Change the text color to white */
-        font-family: Arial, sans-serif;
-        background-color: #f2f2f2;
-        background-color: #f2f2f2;
-        background-image: repeating-linear-gradient(45deg, transparent, transparent 20px, #c0c0c0 20px, #c0c0c0 40px);
-    }
-    .stButton {
-        background-color: #007BFF !important;
-        color: white !important;
-        font-weight: bold !important;
-        border-radius: 5px !important;
-    }
-    .stSelectbox {
-        background-color: #fff !important;
-        color: #333 !important;
-        font-weight: bold !important;
-        border-radius: 5px !important;
-    }
-    [data-testid="stAppViewContainer"] {
-            font-size: .8em;
-            background-color: #2289;
-            background-image:
-                /* <> */
-                linear-gradient(
-                    25deg,
-                    transparent 65%,
-                    hsla(205,80%,40%,1),
-                    transparent 70%
-                ),
-                linear-gradient(
-                    -25deg,
-                    transparent 65%,
-                    hsla(205,80%,40%,1),
-                    transparent 70%
-                ),
-                linear-gradient(
-                    -25deg,
-                    transparent 30%,
-                    hsla(205,80%,40%,1),
-                    transparent 35%
-                ),
-                linear-gradient(
-                    25deg,
-                    transparent 30%,
-                    hsla(205,80%,40%,1),
-                    transparent 35%
-                ),      
-                
-                /* ◊ */
-                linear-gradient(
-                    65deg,
-                    transparent 65%,
-                    hsla(205,80%,40%,1),
-                    transparent 70%
-                ),
-                linear-gradient(
-                    -65deg,
-                    transparent 65%,
-                    hsla(205,80%,40%,1),
-                    transparent 70%
-                ),
-                linear-gradient(
-                    -65deg,
-                    transparent 30%,
-                    hsla(205,80%,40%,1),
-                    transparent 35%
-                ),
-                linear-gradient(
-                    65deg,
-                    transparent 30%,
-                    hsla(205,80%,40%,1),
-                    transparent 35%
-                );
-            background-size: 
-                5em 2em,
-                5em 2em,
-                5em 2em,
-                5em 2em,
-                
-                2em 5em,
-                2em 5em,
-                2em 5em,
-                2em 5em;
-            opacity: 0.9;
-        }
+import streamlit as st
+
+import requests
+from azure_ocr import GetTextRead
+from azure_translator import translate_text
+from dotenv import load_dotenv
+import os
+import numpy as np
+
+
+# Set the title of the tab
+st.set_page_config(page_title="Extraction Application")
+
+# Custom CSS style
+cus_css = """
+    body {
+import streamlit as st
+
+import requests
+from azure_ocr import GetTextRead
+from azure_translator import translate_text
+from dotenv import load_dotenv
+import os
+import numpy as np
+
+
+# Set the title of the tab
+st.set_page_config(page_title="Extraction Application")
+
+# Custom CSS style
+cus_css = """
+    body {
+import streamlit as st
+
+import requests
+from azure_ocr import GetTextRead
+from azure_translator import translate_text
+from dotenv import load_dotenv
+import os
+import numpy as np
+
+
+# Set the title of the tab
+st.set_page_config(page_title="Extraction Application")
+
+# Custom CSS style
+cus_css = """
+   		body{
+		  		      background-color: #323232;
+
+opacity: 0.9;
+background-image:  linear-gradient(30deg, #000000 12%, transparent 12.5%, transparent 87%, #000000 87.5%, #000000), linear-gradient(150deg, #000000 12%, transparent 12.5%, transparent 87%, #000000 87.5%, #000000), linear-gradient(30deg, #000000 12%, transparent 12.5%, transparent 87%, #000000 87.5%, #000000), linear-gradient(150deg, #000000 12%, transparent 12.5%, transparent 87%, #000000 87.5%, #000000), linear-gradient(60deg, #00000077 25%, transparent 25.5%, transparent 75%, #00000077 75%, #00000077), linear-gradient(60deg, #00000077 25%, transparent 25.5%, transparent 75%, #00000077 75%, #00000077);
+background-size: 80px 140px;
+background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;}				}
     """
 # Load environment variables from .env file
 load_dotenv()

@@ -14,7 +14,7 @@ st.set_page_config(page_title="Extraction Application")
 
 # Custom CSS style
 cus_css = """
-    body {
+body {
 import streamlit as st
 
 import requests
@@ -30,7 +30,7 @@ st.set_page_config(page_title="Extraction Application")
 
 # Custom CSS style
 cus_css = """
-    body {
+body {
 import streamlit as st
 
 import requests
@@ -46,7 +46,7 @@ st.set_page_config(page_title="Extraction Application")
 
 # Custom CSS style
 cus_css = """
-    body {
+body {
 import streamlit as st
 
 import requests

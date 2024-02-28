@@ -14,7 +14,7 @@ st.set_page_config(page_title="Extraction Application")
 # Custom CSS style
 cus_css = """
 body {
-    background-color: #333333;
+    background-color: #323232;
     opacity: 0.9;
     background-image:  linear-gradient(30deg, #000000 12%, transparent 12.5%, transparent 87%, #000000 87.5%, #000000), linear-gradient(150deg, #000000 12%, transparent 12.5%, transparent 87%, #000000 87.5%, #000000), linear-gradient(30deg, #000000 12%, transparent 12.5%, transparent 87%, #000000 87.5%, #000000), linear-gradient(150deg, #000000 12%, transparent 12.5%, transparent 87%, #000000 87.5%, #000000), linear-gradient(60deg, #00000077 25%, transparent 25.5%, transparent 75%, #00000077 75%, #00000077), linear-gradient(60deg, #00000077 25%, transparent 25.5%, transparent 75%, #00000077 75%, #00000077);
     background-size: 80px 140px;
@@ -53,7 +53,60 @@ if uploaded_file is not None:
             language_names = {
                 "en": "English",
                 "fr": "French",
-                # Add other languages as needed
+                "zu": "Zulu",
+                "es": "Spanish",
+                "it": "Italian",
+                "ar": "Arabic",
+                "hi": "Hindi",
+                "ml": "Malayalam",
+                "zh-Hans": "Simplified Chinese",
+                "de": "German",
+                "ja": "Japanese",
+                "ko": "Korean",
+                "ru": "Russian",
+                "pt": "Portuguese",
+                "tr": "Turkish",
+                "nl": "Dutch",
+                "th": "Thai",
+                "sv": "Swedish",
+                "fi": "Finnish",
+                "no": "Norwegian",
+                "da": "Danish",
+                "pl": "Polish",
+                "id": "Indonesian",
+                "uk": "Ukrainian",
+                "cs": "Czech",
+                "el": "Greek",
+                "ro": "Romanian",
+                "hu": "Hungarian",
+                "he": "Hebrew",
+                "bn": "Bengali",
+                "ta": "Tamil",
+                "te": "Telugu",
+                "vi": "Vietnamese",
+                "mr": "Marathi",
+                "ur": "Urdu", 
+                "fa": "Persian",
+                "af": "Afrikaans",
+                "sw": "Swahili",
+                "tl": "Tagalog",
+                "ne": "Nepali",
+                "pa": "Punjabi",
+                "gu": "Gujarati",
+                "my": "Burmese",
+                "sd": "Sindhi",
+                "ha": "Hausa",
+                "yo": "Yoruba",
+                "ig": "Igbo",
+                "si": "Sinhala",
+                "km": "Khmer",
+                "sn": "Shona",
+                "so": "Somali",
+                "am": "Amharic",
+                "jv": "Javanese",
+                "rw": "Kinyarwanda",
+                "mg": "Malagasy",
+                "zu": "Zulu",
             }
 
             # Third field for language selection
